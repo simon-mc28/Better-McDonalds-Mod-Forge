@@ -41,10 +41,9 @@ public class BetterMcDonaldsMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == ModCreativeModeTabs.BETTER_MCDONALDS_MOD_TAB) {
+            event.accept(ModBlocks.SALT_BLOCK);
             event.accept(ModItems.SALT);
             event.accept(ModItems.CHEESE);
-
-            event.accept(ModBlocks.SALT_BLOCK);
         }
     }
 

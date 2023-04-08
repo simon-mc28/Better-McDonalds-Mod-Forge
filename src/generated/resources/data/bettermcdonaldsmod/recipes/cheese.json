@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bettermcdonaldsmod:salt"
+      "item": "minecraft:milk_bucket"
     },
     {
-      "item": "minecraft:milk_bucket"
+      "item": "bettermcdonaldsmod:salt"
     }
   ],
   "result": {

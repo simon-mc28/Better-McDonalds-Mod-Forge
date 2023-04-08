@@ -22,8 +22,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.SAND)
                     .sound(SoundType.SAND)
-                    .strength(0.5f)
-                    .requiresCorrectToolForDrops()));
+                    .strength(0.5f)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

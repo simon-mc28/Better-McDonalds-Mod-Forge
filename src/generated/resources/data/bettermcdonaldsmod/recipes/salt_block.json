@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "key": {
     "#": {
       "item": "bettermcdonaldsmod:salt"
@@ -10,7 +11,6 @@
     "##"
   ],
   "result": {
-    "count": 1,
     "item": "bettermcdonaldsmod:salt_block"
   }
 }

@@ -148,7 +148,7 @@ jar {
         attributes([
                 "Specification-Title"     : "bettermcdonaldsmod",
                 "Specification-Vendor"    : "bettermcdonaldsmodsareus",
-                "Specification-Version"   : "1", // We are version 1 of ourselves
+                "Specification-Version"   : "1.19.3-2.1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "bettermcdonaldsmodsareus",

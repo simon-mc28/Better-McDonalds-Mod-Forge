@@ -2,7 +2,9 @@ package simon_mc.bettermcdonaldsmod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import simon_mc.bettermcdonaldsmod.block.ModBlocks;
 import simon_mc.bettermcdonaldsmod.item.ModItems;
@@ -27,6 +29,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.MILK_BUCKET.asItem())
                 .requires(ModItems.SALT.get())
                 .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
+                .define('I', Items.IRON_INGOT.asItem())
+                .define('S', Items.STICK.asItem())
+                .pattern("  I")
+                .pattern(" I ")
+                .pattern("S  ")
+                .unlockedBy(getHasName(Items.IRON_INGOT.asItem()), has(Items.IRON_INGOT.asItem()))
                 .save(consumer);
     }
 

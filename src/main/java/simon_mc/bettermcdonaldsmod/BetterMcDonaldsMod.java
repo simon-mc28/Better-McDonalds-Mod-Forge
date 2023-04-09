@@ -43,6 +43,7 @@ public class BetterMcDonaldsMod {
             event.accept(ModBlocks.SALT_BLOCK);
             event.accept(ModItems.SALT);
             event.accept(ModItems.CHEESE);
+            event.accept(ModItems.KNIFE);
         }
     }
 

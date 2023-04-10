@@ -1,5 +1,6 @@
 package simon_mc.bettermcdonaldsmod.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,8 +15,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> SALT = ITEMS.register("salt",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
+
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)));
+
+    public static final RegistryObject<Item> BEEF_PATTY = ITEMS.register("beef_patty",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).meat().build())));
+
+    public static final RegistryObject<Item> COOKED_BEEF_PATTY = ITEMS.register("cooked_beef_patty",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(0.3f).meat().build())));
+
     public static final RegistryObject<SwordItem> KNIFE = ITEMS.register("knife",
             () -> new SwordItem(new Tier() {
                 @Override

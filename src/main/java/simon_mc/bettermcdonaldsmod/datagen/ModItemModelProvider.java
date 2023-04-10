@@ -20,6 +20,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.SALT);
         simpleItem(ModItems.CHEESE);
+        simpleItem(ModItems.BEEF_PATTY);
+        simpleItem(ModItems.COOKED_BEEF_PATTY);
         handheldItem(ModItems.KNIFE);
     }
 

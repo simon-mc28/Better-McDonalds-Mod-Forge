@@ -3,6 +3,8 @@ package simon_mc.bettermcdonaldsmod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import simon_mc.bettermcdonaldsmod.block.ModBlocks;
 import simon_mc.bettermcdonaldsmod.item.ModItems;
@@ -29,6 +31,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
                 .save(consumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BEEF_PATTY.get())
+                .requires(ModItems.KNIFE.get())
+                .requires(Items.BEEF.asItem())
+                .unlockedBy(getHasName(Items.BEEF.asItem()), has(Items.BEEF.asItem()))
+                .save(consumer);
+
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(ModItems.BEEF_PATTY.get()), RecipeCategory.FOOD, ModItems.COOKED_BEEF_PATTY.get(), 1.0f, 200, RecipeSerializer.SMELTING_RECIPE)
+                .unlockedBy(getHasName(ModItems.BEEF_PATTY.get()), has(ModItems.BEEF_PATTY.get()))
+                .save(consumer, getItemName(ModItems.COOKED_BEEF_PATTY.get()) + "_smelting");
+
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(ModItems.BEEF_PATTY.get()), RecipeCategory.FOOD, ModItems.COOKED_BEEF_PATTY.get(), 1.0f, 100, RecipeSerializer.SMOKING_RECIPE)
+                .unlockedBy(getHasName(ModItems.BEEF_PATTY.get()), has(ModItems.BEEF_PATTY.get()))
+                .save(consumer, getItemName(ModItems.COOKED_BEEF_PATTY.get()) + "_smoking");
+
+        SimpleCookingRecipeBuilder.generic(Ingredient.of(ModItems.BEEF_PATTY.get()), RecipeCategory.FOOD, ModItems.COOKED_BEEF_PATTY.get(), 1.0f, 600, RecipeSerializer.CAMPFIRE_COOKING_RECIPE)
+                .unlockedBy(getHasName(ModItems.BEEF_PATTY.get()), has(ModItems.BEEF_PATTY.get()))
+                .save(consumer, getItemName(ModItems.COOKED_BEEF_PATTY.get()) + "_campfire_cooking");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
                 .define('I', Items.IRON_INGOT.asItem())
                 .define('S', Items.STICK.asItem())
@@ -38,5 +58,4 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.IRON_INGOT.asItem()), has(Items.IRON_INGOT.asItem()))
                 .save(consumer);
     }
-
 }

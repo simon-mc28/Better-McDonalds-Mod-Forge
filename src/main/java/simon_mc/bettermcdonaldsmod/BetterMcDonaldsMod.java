@@ -54,6 +54,7 @@ public class BetterMcDonaldsMod {
             event.accept(ModItems.CHICKENBURGER);
             event.accept(ModItems.MCCHICKEN);
             event.accept(ModItems.FILET_O_FISH);
+            event.accept(ModItems.CHICKEN_MCNUGGETS);
             event.accept(ModItems.KNIFE);
         }
     }

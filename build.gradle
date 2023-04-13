@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '2.1-1.19.4'
+version = '1.19.4-3.0'
 group = 'simon_mc.bettermcdonaldsmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'bettermcdonaldsmod'
 
@@ -148,7 +148,7 @@ jar {
         attributes([
                 "Specification-Title"     : "bettermcdonaldsmod",
                 "Specification-Vendor"    : "bettermcdonaldsmodsareus",
-                "Specification-Version"   : "1.19.4-2.1",
+                "Specification-Version"   : "1.19.4-3.0",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "bettermcdonaldsmodsareus",

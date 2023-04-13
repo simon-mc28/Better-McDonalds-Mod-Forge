@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "bettermcdonaldsmod:cheese"
+    },
+    {
+      "item": "minecraft:cooked_salmon"
+    }
+  ],
+  "result": {
+    "item": "bettermcdonaldsmod:filet_o_fish"
+  }
+}

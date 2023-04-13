@@ -108,6 +108,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.COOKED_CHICKEN.asItem()), has(Items.COOKED_CHICKEN.asItem()))
                 .save(consumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.FILET_O_FISH.get())
+                .requires(Items.BREAD.asItem())
+                .requires(ModItems.CHEESE.get())
+                .requires(Items.COOKED_SALMON.asItem())
+                .unlockedBy(getHasName(Items.COOKED_SALMON.asItem()), has(Items.COOKED_SALMON.asItem()))
+                .save(consumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
                 .define('I', Items.IRON_INGOT.asItem())
                 .define('S', Items.STICK.asItem())

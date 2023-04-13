@@ -39,6 +39,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
                     .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).build())));
 
+    public static final RegistryObject<Item> HAMBURGER = ITEMS.register("hamburger",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(0.3f).build())));
+
     public static final RegistryObject<SwordItem> KNIFE = ITEMS.register("knife",
             () -> new SwordItem(new Tier() {
                 @Override

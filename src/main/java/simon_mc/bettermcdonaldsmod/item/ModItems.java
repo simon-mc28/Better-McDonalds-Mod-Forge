@@ -27,6 +27,18 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
                     .food(new FoodProperties.Builder().nutrition(4).saturationMod(0.3f).meat().build())));
 
+    public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).build())));
+
+    public static final RegistryObject<Item> SWEET_SOUR_SAUCE = ITEMS.register("sweet_sour_sauce",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).build())));
+
+    public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3f).build())));
+
     public static final RegistryObject<SwordItem> KNIFE = ITEMS.register("knife",
             () -> new SwordItem(new Tier() {
                 @Override

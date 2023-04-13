@@ -24,6 +24,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.COOKED_BEEF_PATTY);
         simpleItem(ModItems.MAYONNAISE);
         simpleItem(ModItems.SWEET_SOUR_SAUCE);
+        simpleItem(ModItems.KETCHUP);
         simpleItem(ModItems.HAMBURGER);
         handheldItem(ModItems.KNIFE);
     }

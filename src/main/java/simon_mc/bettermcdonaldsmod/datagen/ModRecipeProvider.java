@@ -76,6 +76,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.COOKED_BEEF_PATTY.get()), has(ModItems.COOKED_BEEF_PATTY.get()))
                 .save(consumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHEESEBURGER.get())
+                .requires(Items.BREAD.asItem())
+                .requires(ModItems.COOKED_BEEF_PATTY.get())
+                .requires(ModItems.CHEESE.get())
+                .unlockedBy(getHasName(ModItems.COOKED_BEEF_PATTY.get()), has(ModItems.COOKED_BEEF_PATTY.get()))
+                .save(consumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
                 .define('I', Items.IRON_INGOT.asItem())
                 .define('S', Items.STICK.asItem())

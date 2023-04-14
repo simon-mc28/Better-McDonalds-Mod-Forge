@@ -75,6 +75,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON)
                     .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.3f).build())));
 
+    public static final RegistryObject<Item> COCA_COLA = ITEMS.register("coca_cola",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+
     public static final RegistryObject<SwordItem> KNIFE = ITEMS.register("knife",
             () -> new SwordItem(new Tier() {
                 @Override

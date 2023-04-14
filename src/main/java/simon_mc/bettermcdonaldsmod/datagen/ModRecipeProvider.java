@@ -128,6 +128,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HAPPY_MEAL.get())
+                .requires(ModTagProvider.Items.BURGERS)
+                .requires(ModTagProvider.Items.SIDE_DISHES)
+                .requires(Items.APPLE.asItem())
+                .unlockedBy(getHasName(ModItems.HAMBURGER.get()), has(ModTagProvider.Items.BURGERS))
+                .save(consumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
                 .define('I', Items.IRON_INGOT.asItem())
                 .define('S', Items.STICK.asItem())

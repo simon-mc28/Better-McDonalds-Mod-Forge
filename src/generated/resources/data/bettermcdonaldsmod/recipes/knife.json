@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    "  I",
+    "   ",
     " I ",
-    "S  "
+    " S "
   ],
   "result": {
     "item": "bettermcdonaldsmod:knife"

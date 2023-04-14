@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "bettermcdonaldsmod:salt"
-            ]
+            "tag": "forge:dusts/salt"
           }
         ]
       },

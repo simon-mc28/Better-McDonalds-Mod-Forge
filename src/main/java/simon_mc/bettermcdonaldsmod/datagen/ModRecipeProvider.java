@@ -19,19 +19,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SALT_BLOCK.get(), 1)
-                .define('#', ModItems.SALT.get())
+                .define('#', ModTagProvider.Items.SALT)
                 .pattern("##")
                 .pattern("##")
-                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHEESE.get())
                 .requires(Items.MILK_BUCKET.asItem())
-                .requires(ModItems.SALT.get())
-                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .requires(ModTagProvider.Items.SALT)
+                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BEEF_PATTY.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BEEF_PATTY.get(), 2)
                 .requires(ModItems.KNIFE.get())
                 .requires(Items.BEEF.asItem())
                 .unlockedBy(getHasName(Items.BEEF.asItem()), has(Items.BEEF.asItem()))
@@ -57,17 +57,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SWEET_SOUR_SAUCE.get())
                 .requires(Items.WATER_BUCKET.asItem())
                 .requires(Items.SUGAR.asItem())
-                .requires(ModItems.SALT.get())
+                .requires(ModTagProvider.Items.SALT)
                 .requires(Items.WHEAT.asItem())
                 .requires(Items.ORANGE_DYE.asItem())
-                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.KETCHUP.get())
                 .requires(Items.RED_DYE.asItem())
                 .requires(Items.SUGAR.asItem())
-                .requires(ModItems.SALT.get())
-                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .requires(ModTagProvider.Items.SALT)
+                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HAMBURGER.get())
@@ -124,16 +124,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.FRIES.get())
                 .requires(ModItems.KNIFE.get())
                 .requires(Items.BAKED_POTATO.asItem())
-                .requires(ModItems.SALT.get())
-                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModItems.SALT.get()))
+                .requires(ModTagProvider.Items.SALT)
+                .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
                 .define('I', Items.IRON_INGOT.asItem())
                 .define('S', Items.STICK.asItem())
-                .pattern("  I")
+                .pattern("   ")
                 .pattern(" I ")
-                .pattern("S  ")
+                .pattern(" S ")
                 .unlockedBy(getHasName(Items.IRON_INGOT.asItem()), has(Items.IRON_INGOT.asItem()))
                 .save(consumer);
     }

@@ -38,6 +38,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.FANTA);
         simpleItem(ModItems.SPRITE);
         simpleItem(ModItems.LIPTON_ICE_TEA_PEACH);
+        simpleItem(ModItems.MCFLURRY);
         handheldItem(ModItems.KNIFE);
     }
 

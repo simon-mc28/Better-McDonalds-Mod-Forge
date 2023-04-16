@@ -21,6 +21,7 @@ public class ModTagProvider {
     public static class Items extends TagsProvider<Item>{
         public static final TagKey<Item> SALT = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("forge", "dusts/salt"));
         public static final TagKey<Item> BURGERS = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("bettermcdonaldsmod", "burgers"));
+        public static final TagKey<Item> DRINKS = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("bettermcdonaldsmod", "drinks"));
         public static final TagKey<Item> SIDE_DISHES = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("bettermcdonaldsmod", "side_dishes"));
         public static final TagKey<Item> SAUCES = ForgeRegistries.ITEMS.tags().createTagKey(new ResourceLocation("bettermcdonaldsmod", "sauces"));
 
@@ -40,6 +41,12 @@ public class ModTagProvider {
             burgerTagAppender.add(ModItems.CHICKENBURGER.getKey());
             burgerTagAppender.add(ModItems.MCCHICKEN.getKey());
             burgerTagAppender.add(ModItems.FILET_O_FISH.getKey());
+
+            TagAppender<Item> drinkTagAppender = tag(DRINKS);
+            drinkTagAppender.add(ModItems.COCA_COLA.getKey());
+            drinkTagAppender.add(ModItems.FANTA.getKey());
+            drinkTagAppender.add(ModItems.SPRITE.getKey());
+            drinkTagAppender.add(ModItems.LIPTON_ICE_TEA_PEACH.getKey());
 
             TagAppender<Item> sideDishTagAppender = tag(SIDE_DISHES);
             sideDishTagAppender.add(ModItems.CHICKEN_MCNUGGETS.getKey());

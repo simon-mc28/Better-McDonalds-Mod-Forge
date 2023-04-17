@@ -1,4 +1,6 @@
 {
+  "block.bettermcdonaldsmod.salt_block": "Salt Block",
+
   "item.bettermcdonaldsmod.salt": "Salt",
   "item.bettermcdonaldsmod.cheese": "Cheese",
   "item.bettermcdonaldsmod.beef_patty": "Beef Patty",
@@ -21,8 +23,6 @@
   "item.bettermcdonaldsmod.lipton_ice_tea_peach": "Lipton Ice Tea Peach",
   "item.bettermcdonaldsmod.mcflurry": "McFlurry",
   "item.bettermcdonaldsmod.knife": "Knife",
-
-  "block.bettermcdonaldsmod.salt_block": "Salt Block",
 
   "creativemodetab.bettermcdonaldsmod.tab": "Better McDonalds Mod"
 }

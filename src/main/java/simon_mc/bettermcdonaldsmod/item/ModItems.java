@@ -77,19 +77,35 @@ public class ModItems {
 
     public static final RegistryObject<Item> COCA_COLA = ITEMS.register("coca_cola",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())) {
+                public UseAnim getUseAnimation(ItemStack itemStack) {
+                    return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
+                }
+            });
 
     public static final RegistryObject<Item> FANTA = ITEMS.register("fanta",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())) {
+                public UseAnim getUseAnimation(ItemStack itemStack) {
+                    return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
+                }
+            });
 
     public static final RegistryObject<Item> SPRITE = ITEMS.register("sprite",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())) {
+                public UseAnim getUseAnimation(ItemStack itemStack) {
+                    return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
+                }
+            });
 
     public static final RegistryObject<Item> LIPTON_ICE_TEA_PEACH = ITEMS.register("lipton_ice_tea_peach",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())));
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3f).build())) {
+                public UseAnim getUseAnimation(ItemStack itemStack) {
+                    return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
+                }
+            });
 
     public static final RegistryObject<Item> MCFLURRY = ITEMS.register("mcflurry",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)

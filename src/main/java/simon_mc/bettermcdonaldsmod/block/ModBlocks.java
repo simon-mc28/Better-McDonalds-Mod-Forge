@@ -3,6 +3,7 @@ package simon_mc.bettermcdonaldsmod.block;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -20,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, BetterMcDonaldsMod.MOD_ID);
 
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.SAND)
+            () -> new FallingBlock(BlockBehaviour.Properties.of(Material.SAND)
                     .sound(SoundType.SAND)
                     .strength(0.5f)));
 

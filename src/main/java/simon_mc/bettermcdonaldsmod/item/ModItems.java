@@ -115,12 +115,12 @@ public class ModItems {
             () -> new SwordItem(new Tier() {
                 @Override
                 public int getUses() {
-                    return 150;
+                    return 125;
                 }
 
                 @Override
                 public float getSpeed() {
-                    return 2f;
+                    return 1.6f;
                 }
 
                 @Override

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "bettermcdonaldsmod:salt"
+    },
+    "title": {
+      "translate": "advancement.bettermcdonaldsmod.get_salt.title"
+    },
+    "description": {
+      "translate": "advancement.bettermcdonaldsmod.get_salt.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_salt_advancement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettermcdonaldsmod:salt"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "bettermcdonaldsmod:start"
+}

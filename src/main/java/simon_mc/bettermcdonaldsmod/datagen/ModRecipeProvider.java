@@ -64,9 +64,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.KETCHUP.get())
-                .requires(Items.RED_DYE.asItem())
+                .requires(Items.WATER_BUCKET.asItem())
                 .requires(Items.SUGAR.asItem())
                 .requires(ModTagProvider.Items.SALT)
+                .requires(Items.RED_DYE.asItem())
                 .unlockedBy(getHasName(ModItems.SALT.get()), has(ModTagProvider.Items.SALT))
                 .save(consumer);
 

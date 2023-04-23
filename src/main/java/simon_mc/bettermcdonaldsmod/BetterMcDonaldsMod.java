@@ -15,12 +15,9 @@ import simon_mc.bettermcdonaldsmod.block.ModBlocks;
 import simon_mc.bettermcdonaldsmod.item.ModCreativeModeTabs;
 import simon_mc.bettermcdonaldsmod.item.ModItems;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(BetterMcDonaldsMod.MOD_ID)
 public class BetterMcDonaldsMod {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "bettermcdonaldsmod";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     public BetterMcDonaldsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -66,7 +63,6 @@ public class BetterMcDonaldsMod {
         }
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent

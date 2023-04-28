@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4-3.0'
+version = '1.19.4-3.0.1'
 group = 'simon_mc.bettermcdonaldsmod'
 archivesBaseName = 'bettermcdonaldsmod'
 
@@ -86,7 +86,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {}
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.0.46'
+    minecraft 'net.minecraftforge:forge:1.19.4-45.0.49'
 }
 
 jar {
@@ -94,7 +94,7 @@ jar {
         attributes([
                 "Specification-Title"     : "bettermcdonaldsmod",
                 "Specification-Vendor"    : "bettermcdonaldsmodsareus",
-                "Specification-Version"   : "1.19.4-3.0",
+                "Specification-Version"   : "1.19.4-3.0.1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "bettermcdonaldsmodsareus",

@@ -19,6 +19,7 @@ import simon_mc.bettermcdonaldsmod.item.ModItems;
 public class BetterMcDonaldsMod {
     public static final String MOD_ID = "bettermcdonaldsmod";
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public BetterMcDonaldsMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

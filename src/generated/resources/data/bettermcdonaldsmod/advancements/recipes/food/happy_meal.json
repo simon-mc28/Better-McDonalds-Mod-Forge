@@ -1,11 +1,43 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hamburger": {
+    "has_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:apple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_burger": {
       "conditions": {
         "items": [
           {
             "tag": "bettermcdonaldsmod:burgers"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_drink": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "bettermcdonaldsmod:drinks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_side_dish": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "bettermcdonaldsmod:side_dishes"
           }
         ]
       },
@@ -20,7 +52,10 @@
   },
   "requirements": [
     [
-      "has_hamburger",
+      "has_burger",
+      "has_drink",
+      "has_side_dish",
+      "has_apple",
       "has_the_recipe"
     ]
   ],

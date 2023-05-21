@@ -13,6 +13,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettermcdonaldsmod:knife"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "bettermcdonaldsmod:beef_patty"
@@ -22,6 +34,7 @@
   },
   "requirements": [
     [
+      "has_knife",
       "has_beef",
       "has_the_recipe"
     ]

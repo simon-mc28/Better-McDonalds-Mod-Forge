@@ -1,6 +1,30 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_baked_potato": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:baked_potato"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bettermcdonaldsmod:knife"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_salt": {
       "conditions": {
         "items": [
@@ -20,6 +44,8 @@
   },
   "requirements": [
     [
+      "has_knife",
+      "has_baked_potato",
       "has_salt",
       "has_the_recipe"
     ]

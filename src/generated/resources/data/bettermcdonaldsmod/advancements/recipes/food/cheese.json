@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_milk_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:milk_bucket"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_salt": {
       "conditions": {
         "items": [
@@ -20,6 +32,7 @@
   },
   "requirements": [
     [
+      "has_milk_bucket",
       "has_salt",
       "has_the_recipe"
     ]

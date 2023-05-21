@@ -1,10 +1,8 @@
 package simon_mc.bettermcdonaldsmod.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
 import simon_mc.bettermcdonaldsmod.BetterMcDonaldsMod;
 import simon_mc.bettermcdonaldsmod.block.ModBlocks;
 
@@ -15,10 +13,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.SALT_BLOCK);
+        blockWithItem();
     }
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    private void blockWithItem() {
+        simpleBlockWithItem(ModBlocks.SALT_BLOCK.get(), cubeAll(ModBlocks.SALT_BLOCK.get()));
     }
 }

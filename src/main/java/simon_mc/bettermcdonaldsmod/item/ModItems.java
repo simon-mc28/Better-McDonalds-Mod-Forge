@@ -25,59 +25,59 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKED_BEEF_PATTY = ITEMS.register("cooked_beef_patty",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(6f).meat().build())));
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).meat().build())));
 
     public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(2f).build())));
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.5f).build())));
 
     public static final RegistryObject<Item> SWEET_SOUR_SAUCE = ITEMS.register("sweet_sour_sauce",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(2f).build())));
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.5f).build())));
 
     public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(2f).build())));
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.5f).build())));
 
     public static final RegistryObject<Item> HAMBURGER = ITEMS.register("hamburger",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(9).saturationMod(12f).build())));
+                    .food(new FoodProperties.Builder().nutrition(9).saturationMod(4.5f).build())));
 
     public static final RegistryObject<Item> CHEESEBURGER = ITEMS.register("cheeseburger",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(14f).build())));
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(5f).build())));
 
     public static final RegistryObject<Item> BIG_MAC = ITEMS.register("big_mac",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(14).saturationMod(18f).build())));
+                    .food(new FoodProperties.Builder().nutrition(14).saturationMod(7f).build())));
 
     public static final RegistryObject<Item> CHICKENBURGER = ITEMS.register("chickenburger",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(12).saturationMod(15f).build())));
+                    .food(new FoodProperties.Builder().nutrition(12).saturationMod(6f).build())));
 
     public static final RegistryObject<Item> MCCHICKEN = ITEMS.register("mcchicken",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(13).saturationMod(17f).build())));
+                    .food(new FoodProperties.Builder().nutrition(13).saturationMod(6.5f).build())));
 
     public static final RegistryObject<Item> FILET_O_FISH = ITEMS.register("filet_o_fish",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(11).saturationMod(15f).build())));
+                    .food(new FoodProperties.Builder().nutrition(11).saturationMod(5.5f).build())));
 
     public static final RegistryObject<Item> CHICKEN_MCNUGGETS = ITEMS.register("chicken_mcnuggets",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(6f).build())));
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(2.5f).build())));
 
     public static final RegistryObject<Item> FRIES = ITEMS.register("fries",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(6f).build())));
+                    .food(new FoodProperties.Builder().nutrition(4).saturationMod(2f).build())));
 
     public static final RegistryObject<Item> HAPPY_MEAL = ITEMS.register("happy_meal",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON)
-                    .food(new FoodProperties.Builder().nutrition(20).saturationMod(30f).build())));
+                    .food(new FoodProperties.Builder().nutrition(20).saturationMod(10f).build())));
 
     public static final RegistryObject<Item> COCA_COLA = ITEMS.register("coca_cola",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(4f).build())) {
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())) {
                 public UseAnim getUseAnimation(ItemStack itemStack) {
                     return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
                 }
@@ -85,7 +85,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> FANTA = ITEMS.register("fanta",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(4f).build())) {
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())) {
                 public UseAnim getUseAnimation(ItemStack itemStack) {
                     return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
                 }
@@ -93,7 +93,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> SPRITE = ITEMS.register("sprite",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(4f).build())) {
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())) {
                 public UseAnim getUseAnimation(ItemStack itemStack) {
                     return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
                 }
@@ -101,7 +101,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> LIPTON_ICE_TEA_PEACH = ITEMS.register("lipton_ice_tea_peach",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(4f).build())) {
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).build())) {
                 public UseAnim getUseAnimation(ItemStack itemStack) {
                     return itemStack.getItem().isEdible() ? UseAnim.DRINK : UseAnim.NONE;
                 }
@@ -109,7 +109,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> MCFLURRY = ITEMS.register("mcflurry",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
-                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.3f).build())));
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(2.5f).build())));
 
     public static final RegistryObject<SwordItem> KNIFE = ITEMS.register("knife",
             () -> new SwordItem(new Tier() {

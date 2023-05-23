@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4-3.0.1'
+version = '1.19.4-3.0.2'
 group = 'simon_mc.bettermcdonaldsmod'
 archivesBaseName = 'bettermcdonaldsmod'
 
@@ -94,7 +94,7 @@ jar {
         attributes([
                 "Specification-Title"     : "bettermcdonaldsmod",
                 "Specification-Vendor"    : "bettermcdonaldsmodsareus",
-                "Specification-Version"   : "1.19.4-3.0.1",
+                "Specification-Version"   : "1.19.4-3.0.2",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "bettermcdonaldsmodsareus",

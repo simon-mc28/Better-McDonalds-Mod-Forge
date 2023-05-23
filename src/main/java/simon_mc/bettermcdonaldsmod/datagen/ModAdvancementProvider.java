@@ -30,7 +30,7 @@ public class ModAdvancementProvider extends ForgeAdvancementProvider {
         public void generate(HolderLookup.Provider registries, Consumer<Advancement> consumer, ExistingFileHelper existingFileHelper) {
             Advancement START = Advancement.Builder.advancement()
                     .display(ModItems.HAPPY_MEAL.get().getDefaultInstance(),
-                            Component.translatable("advancement." + BetterMcDonaldsMod.MOD_ID + ".start.title"),
+                            Component.literal("Better McDonald's Mod"),
                             Component.translatable("advancement." + BetterMcDonaldsMod.MOD_ID + ".start.description"),
                             new ResourceLocation(BetterMcDonaldsMod.MOD_ID, "textures/screens/advancement_tab.png"),
                             FrameType.TASK, false, false, false)

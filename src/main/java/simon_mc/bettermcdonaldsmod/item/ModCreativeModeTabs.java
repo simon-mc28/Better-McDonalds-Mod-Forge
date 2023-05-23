@@ -17,6 +17,6 @@ public class ModCreativeModeTabs {
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
          BETTER_MCDONALDS_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(BetterMcDonaldsMod.MOD_ID, "better_mcdonalds_mod_tab"),
                  builder -> builder.icon(() -> new ItemStack(ModItems.HAPPY_MEAL.get()))
-                         .title(Component.translatable("creativemodetab.bettermcdonaldsmod.tab")));
+                         .title(Component.literal("Better McDonald's Mod")));
     }
 }

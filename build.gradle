@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.19.4-3.0.2'
+version = "${minecraft_version}-${mod_version}"
 group = 'simon_mc.bettermcdonaldsmod'
 archivesBaseName = 'bettermcdonaldsmod'
 
@@ -12,7 +12,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.19.4'
+    mappings channel: 'official', version: "${minecraft_version}"
 
     runs {
         client {
@@ -86,7 +86,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {}
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.0.64'
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 }
 
 jar {
@@ -94,7 +94,7 @@ jar {
         attributes([
                 "Specification-Title"     : "bettermcdonaldsmod",
                 "Specification-Vendor"    : "bettermcdonaldsmodsareus",
-                "Specification-Version"   : "1.19.4-3.0.2",
+                "Specification-Version"   : "${minecraft_version}-${mod_version}",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "bettermcdonaldsmodsareus",

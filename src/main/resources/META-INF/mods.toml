@@ -4,7 +4,7 @@ license="MIT"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/better-mcdonalds-mod/issues"
 [[mods]]
 modId="bettermcdonaldsmod"
-version="1.19.4-3.0.2"
+version="1.19.4-3.0.3"
 displayName="Better McDonald's Mod"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/better-mcdonalds-mod"
 logoFile="logo.png"

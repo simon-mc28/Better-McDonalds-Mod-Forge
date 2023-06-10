@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[45,)"
+loaderVersion="[46,)"
 license="MIT"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/better-mcdonalds-mod/issues"
 [[mods]]
 modId="bettermcdonaldsmod"
-version="1.19.4-3.0.3"
+version="1.20-3.0.0"
 displayName="Better McDonald's Mod"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/better-mcdonalds-mod"
 logoFile="logo.png"
@@ -16,13 +16,13 @@ Many well-known McDonalds products have been added.
 [[dependencies.bettermcdonaldsmod]]
     modId="forge"
     mandatory=true
-    versionRange="[45,)"
+    versionRange="[46,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.bettermcdonaldsmod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4,1.20)"
+    versionRange="[1.20,1.21)"
     ordering="NONE"
     side="BOTH"
 [modproperties.bettermcdonaldsmod]

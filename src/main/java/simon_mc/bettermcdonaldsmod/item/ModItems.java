@@ -28,6 +28,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(1.5f).meat().build())));
 
+    /*
     public static final RegistryObject<Item> RAW_BACON = ITEMS.register("raw_bacon",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
                     .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.5f).meat().build())));
@@ -35,6 +36,7 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_BACON = ITEMS.register("cooked_bacon",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(1f).meat().build())));
+     */
 
     public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)

@@ -10,9 +10,7 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/better-mcdonalds-mod"
 logoFile="logo.png"
 credits="Volwert123, RPorotos"
 authors="simon_mc"
-description='''
-Many well-known McDonalds products have been added.
-'''
+description='''Many well-known McDonalds products have been added.'''
 [[dependencies.bettermcdonaldsmod]]
     modId="forge"
     mandatory=true

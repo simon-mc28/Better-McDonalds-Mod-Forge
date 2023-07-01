@@ -122,6 +122,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
                     .food(new FoodProperties.Builder().nutrition(5).saturationMod(2.5f).build())));
 
+    public static final RegistryObject<Item> GRIMACE_SHAKE = ITEMS.register("grimace_shake",
+            () -> new Item(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(2.5f).build())));
+
     public static final RegistryObject<SwordItem> KNIFE = ITEMS.register("knife",
             () -> new SwordItem(new Tier() {
                 @Override

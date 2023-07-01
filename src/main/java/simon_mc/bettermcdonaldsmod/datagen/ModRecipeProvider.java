@@ -240,6 +240,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.SUGAR.asItem()), has(Items.SUGAR))
                 .save(consumer, new ResourceLocation(BetterMcDonaldsMod.MOD_ID, getItemName(ModItems.MCFLURRY.get())));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.GRIMACE_SHAKE.get())
+                .requires(Items.MILK_BUCKET.asItem())
+                .requires(Items.SNOWBALL.asItem())
+                .requires(Items.SUGAR.asItem())
+                .requires(Items.SWEET_BERRIES.asItem())
+                .unlockedBy(getHasName(Items.MILK_BUCKET.asItem()), has(Items.MILK_BUCKET.asItem()))
+                .unlockedBy(getHasName(Items.SNOWBALL.asItem()), has(Items.SNOWBALL))
+                .unlockedBy(getHasName(Items.SUGAR.asItem()), has(Items.SUGAR))
+                .unlockedBy(getHasName(Items.SWEET_BERRIES.asItem()), has(Items.SWEET_BERRIES))
+                .save(consumer, new ResourceLocation(BetterMcDonaldsMod.MOD_ID, getItemName(ModItems.GRIMACE_SHAKE.get())));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.KNIFE.get())
                 .define('I', Items.IRON_INGOT.asItem())
                 .define('S', Items.STICK.asItem())
